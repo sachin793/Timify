@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subject"
+        android:layout_margin="15dp"
+        android:id="@+id/textview11"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter subject name here "
+        android:inputType="text"
+        android:layout_alignBaseline="@+id/textview11"
+        android:layout_alignBottom="@+id/textview11"
+        android:layout_alignStart="@+id/spinner"
+        android:nextFocusDown="@id/spinner"/>
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Type"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:id="@+id/textview2"
+        android:layout_below="@+id/textview11"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/Type"
+        android:nextFocusDown="@+id/editText2"/>
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/from"
+        android:textSize="25sp"
+        android:id="@+id/textview3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textview2"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:hint="SELECT TIME"
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_alignBaseline="@+id/textview3"
+        android:layout_alignBottom="@+id/textview3"
+        android:layout_alignStart="@+id/spinner"
+        android:nextFocusDown="@+id/editText3"/>
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/to"
+        android:textSize="25sp"
+        android:id="@+id/textview4"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textview3"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:focusable="false"
+        android:clickable="true"
+        android:hint="SELECT TIME"
+        android:editable="false"
+        android:layout_alignTop="@+id/textview4"
+        android:layout_alignStart="@+id/editText2"
+        android:nextFocusDown="@+id/editText30"/>
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="Room no."
+        android:textSize="25sp"
+        android:id="@+id/textview40"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textview4"/>
+    <EditText
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText30"
+        android:layout_alignBottom="@+id/textview40"
+        android:layout_alignStart="@+id/editText3"
+        android:hint="Enter Room no."
+        android:nextFocusDown="@+id/editText90"/>
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="Teacher name"
+        android:textSize="25sp"
+        android:id="@+id/textView70"
+        android:layout_below="@+id/textview40"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"/>
+    <EditText
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText90"
+        android:hint="Enter teacher name"
+        android:layout_alignBottom="@+id/textView70"
+        android:layout_alignTop="@+id/textView70"
+        android:layout_alignStart="@+id/editText30" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        android:layout_below="@+id/textView70"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:text="Save"
+        android:onClick="save"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button20"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignEnd="@+id/editText90"
+        android:layout_marginEnd="68dp"
+        android:layout_alignTop="@+id/button10"
+        android:text="cancel"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

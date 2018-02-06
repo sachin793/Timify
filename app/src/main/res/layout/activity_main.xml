@@ -1,0 +1,36 @@
+<android.support.design.widget.CoordinatorLayout
+     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent">
+
+<android.support.v4.view.ViewPager android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/pager"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:id="@+id/tabs"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="#ffffff"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabMode="scrollable" />
+</android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom|right"
+        app:fabSize="normal"
+        android:onClick="Addtime"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="26dp"
+        app:rippleColor="@color/colorPrimary"/>
+</android.support.design.widget.CoordinatorLayout>

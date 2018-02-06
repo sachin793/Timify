@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Timify</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string-array name="Type">
+        <item>Lecture</item>
+        <item>Seminar</item>
+        <item>Practical</item>
+    </string-array>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

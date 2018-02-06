@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sachin.timify">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Splash screen -->
+        <activity
+            android:name=".Splashscreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Main activity -->
+        <activity android:name=".MainActivity"
+            android:label="Timify"/>
+        <activity android:name=".AddSchedule"
+            android:label="Add Your Schedule">
+
+        </activity>
+        <activity android:name=".View_Schedule"/>
+        <activity android:name=".album"/>
+        <provider android:name=".Data"
+            android:authorities="com.example.sachin.timify.TimeTable"/>
+        <receiver android:name=".MyBroadcastReciever" />
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+</manifest>
